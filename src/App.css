@@ -1,0 +1,165 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar-nav .nav-link.active {
+  background-color: #06b4cb;
+  border-radius: 5px;
+  color: #ffffff !important; /* Changes color of active nav link */
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: #ffffff !important;/* Ensure hover doesn't change the color */
+}
+
+
+.navbar-nav .nav-link {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: regular;
+  color: #06b4cb !important; /* Override Bootstrap default color */
+}
+.navbar-nav .nav-link-login {
+  font-family: 'Roboto';
+  font-size: 14px;
+  background-color: #06b4cb;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: regular;
+  color: #ffffff !important; /* Override Bootstrap default color */
+}
+.navbar-nav .nav-link-login:hover {
+  font-family: 'Roboto';
+  font-size: 15px;
+  background-color: #A4449D;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: regular;
+  color: #ffffff !important; /* Override Bootstrap default color */
+}
+.navbar-nav .nav-link-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: regular;
+  padding: 6px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #06b4cb;
+  color: #ffffff !important; /* Override Bootstrap default color */
+}
+
+.navbar-nav .nav-link-button:hover {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  padding: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #A4449D;
+  color: #ffffff !important; /* Override Bootstrap default color */
+}
+.navbar-nav .nav-link:hover {
+  color: #A4449D !important;
+  font-size: 16px; /* Optional: Change the color when hovered */
+}
+.navbar-nav .nav-item {
+  margin-right: 5px; /* Adjust the space as needed */
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.navbar-nav .dropdown-item{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: regular;
+  color: #06b4cb !important;
+}
+.navbar-nav .dropdown-item:hover {
+  color: #A4449D !important; /* Optional: Change the color when hovered */
+  font-size: 16px;
+}
+
+/* Smooth dropdown opening and closing */
+.navbar-nav .dropdown .dropdown-menu {
+  display: block; /* Always keep it block, but we'll control visibility */
+  max-height: 0; /* Start with 0 height */
+  overflow: hidden; /* Hide overflowing content */
+  opacity: 0; /* Initially hidden */
+  transition: max-height 1s ease, opacity 1s ease; /* Adjust the timing for smoothness */
+}
+
+/* When hovered, expand the dropdown menu */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  max-height: 500px; /* Adjust based on the expected height of your dropdown */
+  opacity: 1; /* Make it fully visible */
+  transition: max-height 1s ease, opacity 1s ease; /* Smooth transition */
+}
+
+/* Optional: Hover effect on individual dropdown items */
+.navbar-nav .dropdown-item:hover {
+  color: #A4449D !important; /* Change the color when hovered */
+  transition: color 0.5s ease; /* Smooth color transition */
+}
+.navbar-nav .dropdown-item.active {
+  color: #ffffff !important; 
+  background: #06b4cb !important;
+  transition: color 0.5s ease; /* Smooth color transition */
+}
+
+
+/* For larger screens (tablet and desktop), align items to the right */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    justify-content: flex-end; /* Align items to the right on larger screens */
+  }
+}
+
+/* For mobile screens, center the nav items */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: center; /* Center items on mobile screens */
+  }
+}
+
+.navbar-brand{
+  margin-left: 100px;
+}
+.navbar-nav{
+  margin-right: 100px;
+}

@@ -1,0 +1,104 @@
+/* Change the size, position, and color of the buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Change button width */
+  height: 40px; /* Change button height */
+  top: 50%; /* Position buttons vertically in the middle */
+  transform: translateY(-50%); /* Ensure the button is centered vertically */
+  /* Set the background color (semi-transparent black) */
+  border-radius: 50%; /* Make the buttons circular */
+}
+
+.carousel-control-prev {
+  left: 20px; /* Move the previous button 20px from the left */
+}
+
+.carousel-control-next {
+  right: 20px; /* Move the next button 20px from the right */
+}
+
+/* Change the size and color of the icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px; /* Change icon width */
+  height: 20px; /* Change icon height */
+   /* Change the icon color to white */
+  background-size: 100%; /* Ensure the icon is properly sized */
+  border-radius: 50%;
+  color: #06b4cb !important; /* Round the icon (optional) */
+}
+
+
+.statistic-section {
+  position: relative;
+  background-image: url('../Image/diabetesbanner.png'); /* Set your background image here */
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Adjust height as necessary */
+  display: flex;
+  align-items: center;
+}
+.actevities-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 700px; /* Adjust height as necessary */
+  background-color: #b8f7ff41;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 75, 84, 0.4); /* Solid color with 40% transparency */
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Make sure content stays on top of overlay */
+}
+/* Full-width background with wave image and overlay */
+.wave-background {
+  position: relative;
+  width: 100%;
+  height: 750px; /* Adjust height as needed */
+  background-image: url('../Image/diabetesbanner.png'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Container content should be above the overlay */
+.container.achivement-container {
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #034f60 0%, #023e3d 100%),
+    linear-gradient(121.28deg, #4b037a 0%, #034f60 100%),
+    linear-gradient(360deg, #4b037a 0%, #023e3d 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #034f60 0%, #023b47 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #034f60 0%, #33022d 100%);
+background-blend-mode: screen, color-dodge, overlay, difference, normal;
+
+
+
+}
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.btn .service-button .text-white .mt-3:hover {   
+  background-color: #A4449D;
+  
+}
